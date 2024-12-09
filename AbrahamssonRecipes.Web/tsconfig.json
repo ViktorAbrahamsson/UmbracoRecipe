@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "es2015"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "paths": {
+      "~*": [ "./*" ],
+      "jquery": [ "../node_modules/jquery" ] // this mapping is relative to "baseUrl"
+    }
+  },
+  "include": [ "./js/*" ],
+  "exclude": [ "./node_modules" ]
+}

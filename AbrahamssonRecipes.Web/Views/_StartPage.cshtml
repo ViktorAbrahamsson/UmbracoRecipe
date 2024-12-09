@@ -1,0 +1,20 @@
+@* @using Svegro.Website.Web.Models *@
+@using Umbraco.Cms.Web.Common.PublishedModels;
+@* @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<StartPage> *@
+
+@{
+  @* HeroObject heroObject = new HeroObject();
+  heroObject.Heading = Model.Heading;
+  heroObject.Text = Model.Text;
+  heroObject.Links = Model.Links;
+  heroObject.Media = Model.Media;
+  heroObject.ToggleReadMore = Model.ToggleReadMore;
+  heroObject.VideoLink = Model.VideoLink;
+
+  @if (Model.Layout != null)
+  {
+    heroObject.Layout = Model.Layout;
+  } *@
+}
+@* <partial name="_Hero" model="@heroObject" />
+<partial name="_BlockList" model="Model.BlockList" /> *@
